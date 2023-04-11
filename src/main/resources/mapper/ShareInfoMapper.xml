@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.nurse_api.mapper.ShareInfoMapper">
+
+<select id="selectAll" resultType="ShareDto">
+    select nickname,create_time,picurl,fans,content from t_share order by create_time desc
+</select>
+
+<insert id="insert" parameterType="ShareInfo">
+    insert into t_share values(0,#{openId},#{nickname},
+                            #{picurl},#{create_time},#{fans},#{content})
+</insert>
+
+
+</mapper>

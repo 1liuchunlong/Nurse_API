@@ -1,0 +1,50 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # ?????????
+    druid:
+      username: root
+      password: root
+      url: jdbc:mysql://1.12.249.221:3306/medical_system?serverTimezone=UTC&useSSL=false&characterEncoding=utf8&serverTimezone=GMT
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    database: 0
+    port: 6379
+    host: 1.12.249.221
+    password: root
+  http:
+    multipart:
+      maxFileSize: 1000Mb
+      maxRequestSize: 10000Mb
+
+weixin:
+  appid: 'wxa78264c1ed11f15c'
+  secret: 'eb007debd05ed414a9845d1c943a2adf'
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.example.nurse_api.pojo
+
+
+cos:
+  url: https://chunchunbucket-1315831092.cos.ap-guangzhou.myqcloud.com/
+  accessKey: AKIDBD290bxKdhV4ORPFsHdqpZ2Fgute9NN8
+  secretKey: dggWEj15uUedU7XgaF3h6NTMxJUR8bok
+  regionName: ap-guangzhou
+  bucketName: chunchunbucket-1315831092
+  folderPrefix: nurseSystem
+
+
+logging:
+  level:
+    com.example.nurse_api.mapper: debug
+
+
+
+
+
