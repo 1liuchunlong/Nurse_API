@@ -32,12 +32,12 @@ mybatis:
 
 
 cos:
-  url: https://chunchunbucket-1315831092.cos.ap-guangzhou.myqcloud.com/
-  accessKey: AKIDBD290bxKdhV4ORPFsHdqpZ2Fgute9NN8
-  secretKey: dggWEj15uUedU7XgaF3h6NTMxJUR8bok
-  regionName: ap-guangzhou
-  bucketName: chunchunbucket-1315831092
-  folderPrefix: nurseSystem
+  url: xxx
+  accessKey: Axx
+  secretKey: xx
+  regionName: xxx
+  bucketName: xxx
+  folderPrefix: xxx
 
 
 logging:
